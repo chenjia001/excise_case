@@ -1,0 +1,67 @@
+.showContainer {
+    width: 356px;
+    height: 200px;
+    border: 10px solid maroon;
+    background-color: #AAA;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 9999px;
+    position: absolute;
+    left: 0px;
+}
+
+.container>img {
+    display: block;
+    float: left;
+    height: 200px;
+    width: 356px;
+}
+
+.left-triangle {
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+    left: 0;
+    /* transform: rotate(90deg); */
+}
+
+.right-triangle {
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+    right: 0;
+    /* transform: rotate(-90deg); */
+}
+
+.left-triangle,
+.right-triangle {
+    display: none;
+}
+
+.showContainer:hover .left-triangle {
+    display: block;
+}
+
+.showContainer:hover .right-triangle {
+    display: block;
+}
+
+.dots {
+    width: inherit;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.dots .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: orange;
+    margin-right: 10px;
+}
